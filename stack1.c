@@ -4,12 +4,12 @@
 #include <stdio.h>
 
 int main() {
-	int cookie;
-	char buf[80];
+    int cookie;
+    char buf[80];
 
-	printf("buf: %08x cookie: %08x\n", &buf, &cookie);
-	gets(buf);
+    printf("buf: %08x cookie: %08x\n", &buf, &cookie);
+    gets(buf);
 
-	if (cookie == 0x41424344)
-		printf("you win!\n");
+    if (cookie == 0x41424344)
+        printf("you win!\nbuf: %08x cookie: %08x\n", buf, cookie);
 }
